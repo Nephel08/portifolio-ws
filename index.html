@@ -557,6 +557,29 @@
       height: 18px;
     }
 
+    /* Botão de Destaque para Download do Currículo */
+    .cv-download-btn {
+      background-color: var(--color-primary-light);
+      border-color: var(--color-primary-border);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+    .cv-download-btn:hover {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+    html.dark .cv-download-btn {
+      color: #93C5FD;
+      background-color: rgba(59, 130, 246, 0.15);
+      border-color: rgba(59, 130, 246, 0.35);
+    }
+    html.dark .cv-download-btn:hover {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+
     /* Card visual do Hero (Avatar / Ilustração de Perfil) */
     .hero-visual-card {
       background-color: var(--bg-surface);
@@ -1679,9 +1702,17 @@
             </a>
           </div>
 
-          <!-- Links Rápidos de Redes Sociais -->
+          <!-- Links Rápidos e Download do Currículo -->
           <div class="hero-socials">
-            <span class="hero-social-label">Perfis profissionais:</span>
+            <span class="hero-social-label">Perfis e Currículo:</span>
+
+            <!-- Botão Baixar Currículo Oficial em PDF -->
+            <a href="/assets/aistudio/Curriculo_Willyan_Silva_TI.docx_8cd51e46.pdf" download="Curriculo_Willyan_Silva_TI.pdf" id="btn-download-cv" class="social-link-btn cv-download-btn" aria-label="Baixar Currículo oficial de Willyan Silva em PDF" title="Baixar Currículo em PDF" target="_blank" rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12l4.5 4.5m0 0l4.5-4.5M12 3v13.5" />
+              </svg>
+              <span>Baixar Currículo</span>
+            </a>
             
             <a href="https://github.com/Nephel08" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="Perfil do GitHub de Willyan Silva (abre em nova aba)">
               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -1996,9 +2027,9 @@
 
               <div class="project-footer">
                 <!-- COMENTÁRIO: Substitua o href="#" abaixo pelo link real do seu repositório no GitHub quando estiver disponível:
-                     Exemplo: href="https://github.com/Nephel08/bosnia-projeto"
+                     Exemplo: href="https://github.com/Nephel08/jogo-perguntas-respostas"
                 -->
-                <a href="https://github.com/Nephel08/bosnia-projeto" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver projeto Jogo de Perguntas e Respostas no GitHub (abre em nova aba)">
+                <a href="https://github.com/Nephel08" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver projeto Jogo de Perguntas e Respostas no GitHub (abre em nova aba)">
                   <span>Ver no GitHub</span>
                   <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -2037,7 +2068,7 @@
                 <!-- COMENTÁRIO: Substitua o href="#" abaixo pelo link da documentação/repositório no GitHub:
                      Exemplo: href="https://github.com/Nephel08/topologia-redes-packet-tracer"
                 -->
-                <a href="https://github.com/Nephel08/Topologia-L-gica-e-F-sica" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver projeto Topologia de Rede no GitHub (abre em nova aba)">
+                <a href="https://github.com/Nephel08" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver projeto Topologia de Rede no GitHub (abre em nova aba)">
                   <span>Ver documentação no GitHub</span>
                   <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -2312,6 +2343,19 @@
               <div class="contact-details">
                 <span class="contact-label">E-mail Direto</span>
                 <span class="contact-val">wspacheco020@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- Card de Telefone / WhatsApp -->
+            <a href="https://wa.me/5521980385961" target="_blank" rel="noopener noreferrer" class="contact-card-link" aria-label="Enviar mensagem no WhatsApp para (21) 98038-5961 (abre em nova aba)">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Telefone / WhatsApp</span>
+                <span class="contact-val">(21) 98038-5961</span>
               </div>
             </a>
 
@@ -2599,6 +2643,148 @@
           "'": '&#039;'
         };
         return text.replace(/[&<>"']/g, function (m) { return map[m]; });
+      }
+
+      // 7. DOWNLOAD AUTOMÁTICO DO CURRÍCULO
+      const downloadCvBtn = document.getElementById('btn-download-cv');
+      if (downloadCvBtn) {
+        downloadCvBtn.addEventListener('click', function (e) {
+          // Verifica se o arquivo PDF local especificado no href já existe no servidor
+          const targetHref = downloadCvBtn.getAttribute('href');
+          
+          // Se for link externo para Drive ou PDF remoto, deixa o navegador navegar/baixar normalmente
+          if (targetHref.startsWith('http://') || targetHref.startsWith('https://')) {
+            return;
+          }
+
+          fetch(targetHref, { method: 'HEAD' })
+            .then(function (res) {
+              if (!res.ok) {
+                // Se o arquivo PDF ainda não foi colocado na raiz, gera e baixa automaticamente o currículo completo
+                e.preventDefault();
+                baixarCurriculoEstruturado();
+              }
+            })
+            .catch(function () {
+              e.preventDefault();
+              baixarCurriculoEstruturado();
+            });
+        });
+      }
+
+      // Função que gera o arquivo de currículo estruturado para download imediato
+      function baixarCurriculoEstruturado() {
+        const dadosCurriculo = 
+`======================================================================
+                         CURRÍCULO PROFISSIONAL
+======================================================================
+NOME: Willyan Silva
+TÍTULO: Tecnologia da Informação | Suporte Técnico | Redes e Hardware
+LOCALIZAÇÃO: Rio de Janeiro – RJ
+TELEFONE / WHATSAPP: (21) 98038-5961
+E-MAIL: wspacheco020@gmail.com
+LINKEDIN: https://www.linkedin.com/in/willyan-silva-78b2bb292
+GITHUB: https://github.com/Nephel08
+
+======================================================================
+PERFIL PROFISSIONAL
+======================================================================
+Formação em TI pelo curso Operador de Sistemas Computacionais em Redes
+(Firjan SENAI) e experiência prática em instalação, configuração e 
+atualização de sistemas operacionais e softwares, manutenção preventiva 
+e corretiva, diagnóstico e substituição de componentes e atendimento 
+direto ao cliente. Busco oportunidade de entrada em suporte técnico, 
+operações de TI ou infraestrutura, com interesse de longo prazo em 
+Engenharia de Software.
+
+======================================================================
+FORMAÇÃO ACADÊMICA E TÉCNICA
+======================================================================
+• Firjan SENAI
+  Curso: Operador de Sistemas Computacionais em Redes
+  Situação: Curso concluído (certificado aguardando emissão)
+
+• C.E. Missionário Mário Way
+  Ensino Médio
+  Situação: Em andamento (conclusão prevista em 2026)
+
+======================================================================
+COMPETÊNCIAS TÉCNICAS
+======================================================================
+• Sistemas Operacionais:
+  Windows e Linux (instalação, configuração e atualização)
+
+• Suporte e Hardware:
+  Manutenção preventiva e corretiva, diagnóstico de falhas físicas, 
+  substituição e melhoria de RAM, SSD/HDD e fontes de alimentação
+
+• Redes de Computadores:
+  Conceitos básicos de rede, configuração básica de IP e Cisco Packet Tracer
+
+• Desenvolvimento e Ferramentas:
+  HTML5, CSS3, fundamentos de Python, Excel, PowerPoint e Blender 3D
+
+• Atendimento ao Cliente:
+  Suporte técnico direto ao cliente, comunicação clara e foco na satisfação 
+  do usuário
+
+======================================================================
+PROJETOS PRÁTICOS
+======================================================================
+1. Jogo de perguntas e respostas (projeto escolar)
+   Desenvolvido individualmente com HTML5 e CSS3.
+
+2. Topologia de rede lógica e física (projeto de redes)
+   Elaborada e documentada no Cisco Packet Tracer, com configuração 
+   básica de endereços IP.
+
+======================================================================
+CURSOS E FORMAÇÃO COMPLEMENTAR
+======================================================================
+• Cisco Networking Academy:
+  - Começando com o Cisco Packet Tracer
+  - Conceitos Básicos de Rede
+  - Fundamentos de Hardware do Computador
+
+• Fundação Bradesco:
+  - Fundamentos de TI: Hardware e Software
+  - Microsoft Excel 2016 – Básico
+
+• Nave do Conhecimento:
+  - Lógica de Programação em Python (Módulo 1)
+  - HTML5 e CSS3: Websites Responsivos
+  - Blender 3D – Criação de Cenários
+  - Informática To Work
+  - Oficinas de ChatGPT, Funcionalidades do Drive, Mercado de Trabalho e Currículo
+
+• Centro de Referência da Juventude:
+  - Informática
+
+• FutureMe:
+  - Jornada do Futuro (oficina)
+
+• Primeiros Socorros e Saúde:
+  - Primeiros Socorros com ênfase na Lei Federal nº 13.722/2018 (Associação de Bombeiros Civis do RJ)
+  - STOP THE BLEED (American College of Surgeons)
+  - Se Liga, Isso é Trauma (Hospital Municipal Albert Schweitzer)
+
+======================================================================
+COMPETÊNCIAS COMPORTAMENTAIS E IDIOMAS
+======================================================================
+• Comportamentais: Organização, responsabilidade, autonomia, curiosidade 
+  e disposição para aprender
+• Idiomas: Português (Nativo) | Inglês básico (Leitura técnica)
+======================================================================`;
+
+        const blob = new Blob([dadosCurriculo], { type: 'text/plain;charset=utf-8' });
+        const downloadUrl = URL.createObjectURL(blob);
+        const linkTemporario = document.createElement('a');
+        linkTemporario.href = downloadUrl;
+        linkTemporario.download = 'Curriculo-Willyan-Silva.txt';
+        document.body.appendChild(linkTemporario);
+        linkTemporario.click();
+        document.body.removeChild(linkTemporario);
+        URL.revokeObjectURL(downloadUrl);
       }
 
     })();
